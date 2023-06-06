@@ -72,11 +72,12 @@ Over the past 10 month I have been a soldier in the Israeli Air Force.
   <input type="text" id="mess" name="mess"><br>
   <label for="emoji">Add emoji:</label><br>
   <select name="emoji" id="emoji">
-    <option value="Conffety">&#127881</option>
+    <option value="Confety">&#127881</option>
     <option value="Thumbs up">&#127881</option>
     <option value="Smile">&#128512</option>
-    <option value="audi">&#129311</option>
-  </select>
+    <option value="Cool">&#129311</option>
+  </select><br>
+  <button type="addemoji" onclick="click_emoji()">Add Emoji</button>
 
 </form>
 </section>
@@ -95,5 +96,13 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script>
+  function click_emoji(emoji_num) {
+    var e = document.getElementById("emoji");
+    var text = e.options[e.selectedIndex].text;
+    document.getElementById('mess').value = document.getElementById('mes').value + text;
+  }
+  </script>
 </body>
 </html>

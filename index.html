@@ -64,7 +64,6 @@ Over the past 10 month I have been a soldier in the Israeli Air Force.
 <h1>Contact Me!</h1>
 <br/>
 <form>
-  align="center"
   <label for="mail">E-Mail:</label><br>
   <input type="email" id="email" name="email"><br>
   <label for="name">Name:</label><br>
@@ -101,8 +100,9 @@ $(function(){
 <script>
   function click_emoji(emoji_num) {
     var e = document.getElementById("emoji");
-    var text = e.options[e.selectedIndex].text;
-    document.getElementById('mess').value = document.getElementById('mes').value + text;
+    print(e)
+    var emoji = e.options[e.selectedIndex].text;
+    document.getElementById('mess').value = document.getElementById('mes').value + emoji;
   }
   </script>
 </body>

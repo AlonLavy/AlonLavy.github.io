@@ -77,7 +77,7 @@ Over the past 10 month I have been a soldier in the Israeli Air Force.
     <option value="Smile">&#128512</option>
     <option value="Cool">&#129311</option>
   </select><br>
-  <button type="addemoji" onclick="click_emoji()">Add Emoji</button>
+  <button type="addemoji" onclick="click_emoji(event)">Add Emoji</button>
 
 </form>
 </section>
@@ -98,7 +98,7 @@ $(function(){
  </script>
 
 <script>
-  function click_emoji(emoji_num, event) {
+  function click_emoji(event) {
     event.preventDefault();
     var e = document.getElementById("emoji");
     var emoji = e.options[e.selectedIndex].text;

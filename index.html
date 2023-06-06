@@ -73,7 +73,7 @@ Over the past 10 month I have been a soldier in the Israeli Air Force.
   <label for="emoji">Add emoji:</label><br>
   <select name="emoji" id="emoji">
     <option value="Confety">&#127881</option>
-    <option value="Thumbs up">&#127881</option>
+    <option value="Thumbs up">&#127882</option>
     <option value="Smile">&#128512</option>
     <option value="Cool">&#129311</option>
   </select><br>
@@ -100,10 +100,9 @@ $(function(){
 <script>
   function click_emoji(emoji_num) {
     var e = document.getElementById("emoji");
-    print(e)
     var emoji = e.options[e.selectedIndex].text;
-    document.getElementById('mess').value = document.getElementById('mes').value + emoji;
+    document.getElementById('mess').value = document.getElementById('mess').value + emoji;
   }
-  </script>
+</script>
 </body>
 </html>

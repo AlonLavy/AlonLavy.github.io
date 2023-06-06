@@ -98,7 +98,8 @@ $(function(){
  </script>
 
 <script>
-  function click_emoji(emoji_num) {
+  function click_emoji(emoji_num, event) {
+    event.preventDefault();
     var e = document.getElementById("emoji");
     var emoji = e.options[e.selectedIndex].text;
     document.getElementById('mess').value = document.getElementById('mess').value + emoji;

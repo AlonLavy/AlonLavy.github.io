@@ -67,20 +67,20 @@
     <br />
     <div class="centerform">
       <form action="mailto:alon.lavy2@gmail.com" method="post" enctype="text/plain">
-        <label for="mail">E-Mail:</label><br>
+        <label for="mail" class="fieldText">E-Mail:</label><br>
         <input type="email" id="email" name="email"><br>
-        <label for="name">Name:</label><br>
+        <label for="name" class="fieldText">Name:</label><br>
         <input type="text" id="name" name="name"><br>
-        <label for="mess">Text Messege:</label><br>
+        <label for="mess" class="fieldText">Text Messege:</label><br>
         <input type="text" id="mess" name="mess"><br>
-        <label for="emoji">Add emoji:</label><br>
-        <select name="emoji" id="emoji">
+        <label for="emoji" class="fieldText">Add emoji:</label><br>
+        <select name="emoji" id="emoji" class="emojipick">
           <option value="Confety">&#127881</option>
           <option value="Party">&#127882</option>
           <option value="Smile">&#128512</option>
           <option value="Cool">&#129311</option>
-        </select><br>
-        <button id="emojiButton" type="addemoji" onclick="click_emoji(event)">Add Emoji</button>
+        </select>
+        <button id="emojiButton" class="emojipick" class="buttons" onclick="click_emoji(event)">Add Emoji</button>
         <br>
         <input type="submit" value="Submit">
       </form>

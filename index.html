@@ -1,109 +1,115 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<h1> About Me:</h1>
-<p> Howdy! My name is Alon Lavy!
-<br/>
-I was born on February 25th, 2004, which makes me 19.
-<br/>
-Over the past 10 month I have been a soldier in the Israeli Air Force.
-</p>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<h1>My Photos:</h1>
-<div class="row">
-  <div class="column">
-    <img src="resources/IMG_6401.jpg" alt="St. Peter's Cathedral" style="width: 100%; height: auto;">
+  <div id="menu">
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#photos">My Photos</a></li>
+    <li><a href="#playlist">My Playlist</a></li>
+    <li><a href="#contact">Contact Me</a></li>
   </div>
-  <div class="column">
-    <img src="resources/IMG_6664.jpg" alt="Negev" style="width: 100%; height: auto;">
-  </div>
-  <div class="column">
-    <img src="resources/IMG_6727.jpg" alt="Desert" style="width: 100%; height: auto;">
-  </div>
-</div>
-<br/>
-</section>
 
-<section id="playlist" class="section">
-<br/>
-<h1>My Playlist</h1>
-<div class="row">
-  <div class="column">
-    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/n7vr4dkgj2o">
-</iframe>
-  </div>
-  <div class="column">
-    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/MpWK6IM250E">
-</iframe>
-  </div>
-  <div class="column">
-    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/GIRbXNousaI">
-</iframe>
-  </div>
-</div>
-<br/>
-</section>
+  <section id="about" class="section">
+    <br />
+    <h1> About Me:</h1>
+    <p> Howdy! My name is Alon Lavy!
+      <br />
+      I was born on February 25th, 2004, which makes me 19.
+      <br />
+      Over the past 10 month I have been a soldier in the Israeli Air Force.
+    </p>
+  </section>
 
-<section id="contact" class="section">
-<br/>
-<h1>Contact Me!</h1>
-<br/>
-<form action="mailto:alon.lavy2@gmail.com" method="post" enctype="text/plain">
-  <label for="mail">E-Mail:</label><br>
-  <input type="email" id="email" name="email"><br>
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="mess">Text Messege:</label><br>
-  <input type="text" id="mess" name="mess"><br>
-  <label for="emoji">Add emoji:</label><br>
-  <select name="emoji" id="emoji">
-    <option value="Confety">&#127881</option>
-    <option value="Party">&#127882</option>
-    <option value="Smile">&#128512</option>
-    <option value="Cool">&#129311</option>
-  </select><br>
-  <button type="addemoji" onclick="click_emoji(event)">Add Emoji</button>
-  <input type="submit" value="Submit">
-</form>
-</section>
+  <section id="photos" class="section">
+    <br />
+    <h1>My Photos:</h1>
+    <div class="row">
+      <div class="column">
+        <img src="resources/IMG_6401.jpg" alt="St. Peter's Cathedral" style="width: 100%; height: auto;">
+      </div>
+      <div class="column">
+        <img src="resources/IMG_6664.jpg" alt="Negev" style="width: 100%; height: auto;">
+      </div>
+      <div class="column">
+        <img src="resources/IMG_6727.jpg" alt="Desert" style="width: 100%; height: auto;">
+      </div>
+    </div>
+    <br />
+  </section>
+
+  <section id="playlist" class="section">
+    <br />
+    <h1>My Playlist</h1>
+    <div class="row">
+      <div class="column">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/n7vr4dkgj2o">
+        </iframe>
+      </div>
+      <div class="column">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/MpWK6IM250E">
+        </iframe>
+      </div>
+      <div class="column">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/GIRbXNousaI">
+        </iframe>
+      </div>
+    </div>
+    <br />
+  </section>
+
+  <section id="contact" class="section">
+    <br />
+    <h1>Contact Me!</h1>
+    <br />
+    <div class="centerform">
+      <form action="mailto:alon.lavy2@gmail.com" method="post" enctype="text/plain">
+        <label for="mail">E-Mail:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="mess">Text Messege:</label><br>
+        <input type="text" id="mess" name="mess"><br>
+        <label for="emoji">Add emoji:</label><br>
+        <select name="emoji" id="emoji">
+          <option value="Confety">&#127881</option>
+          <option value="Party">&#127882</option>
+          <option value="Smile">&#128512</option>
+          <option value="Cool">&#129311</option>
+        </select><br>
+        <button id="emojiButton" type="addemoji" onclick="click_emoji(event)">Add Emoji</button>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash);
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
 
-<script>
-  function click_emoji(event) {
-    event.preventDefault();
-    var e = document.getElementById("emoji");
-    var emoji = e.options[e.selectedIndex].text;
-    document.getElementById('mess').value = document.getElementById('mess').value + emoji;
-  }
-</script>
+  <script>
+    function click_emoji(event) {
+      event.preventDefault();
+      var e = document.getElementById("emoji");
+      var emoji = e.options[e.selectedIndex].text;
+      document.getElementById('mess').value = document.getElementById('mess').value + emoji;
+    }
+  </script>
 </body>
+
 </html>

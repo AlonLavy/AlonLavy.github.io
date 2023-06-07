@@ -51,31 +51,8 @@ select {
 	border-radius: 4px;
 	box-sizing: border-box;
 }
-/*
-#emojiButton {
-	background-color: #08eaad;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
 
-
-
-input[type=submit] {
-	width: 20%;
-	background-color: #08eaad;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}*/
-
-input[type=submit]:hover {
+.buttons:hover {
 	background-color: #45a049;
 }
 
